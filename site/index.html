@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="description" content="Spring boot env variable to property"/>
+<meta name="author" content="ragatzino"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<body id="body">
+  <h1>
+    Spring boot env variable to property
+  </h1>
+  <h2>Enter your property file</h2>
+ <form>
+        <input type="text" id="propertyFile" name="propertyFile" value="">
+        <input type="submit" value="Submit"  onclick="computeProperties()">
+  </form>
+  <h2> Result </h2>
+  <div id=12343></div>
+<!-- Content will go here -->
+<script>
+function computeProperties() {
+  const rootElement = document.getElementById(12343);
+  var propertyFile = document.getElementById("propertyFile").value;
+  console.log(propertyFile)
+  const computedPropertyFile = "base"
+  var inputDiv = document.createElement('div');
+  inputDiv.setAttribute('id',123)
+  var newTextContent = document.createTextNode("<b>Input: </b> " + propertyFile + "<br>" + i);
+  document.body.appendChild(inputDiv);
+  //var elemOutput = document.createElement('div');
+  //elemOutput.setAttribute('id',123)
+  //elemOutput.text = "<b>Output: </b> "+ computedPropertyFile + "<br>"
+  //document.body.appendChild(elemOutput); 
+}
+</script>
+</body>
+</html>
